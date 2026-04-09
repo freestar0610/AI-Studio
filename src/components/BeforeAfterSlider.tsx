@@ -34,28 +34,32 @@ export default function BeforeAfterSlider() {
           {/* After Image (High Res) */}
           <div className="absolute inset-0">
             <img 
-              src="https://picsum.photos/seed/after/1920/1080" 
+              src="https://picsum.photos/seed/portrait-hd/1920/1080" 
               alt="After AI Remastering"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute bottom-6 right-6 px-4 py-2 rounded-full glass text-xs font-bold tracking-widest uppercase text-cyan-accent">
+            <div className="absolute bottom-6 right-6 px-4 py-2 rounded-full glass text-xs font-bold tracking-widest uppercase text-gold">
               After: AI Remastered
             </div>
           </div>
 
           {/* Before Image (Low Res) */}
           <div 
-            className="absolute inset-0 overflow-hidden"
+            className="absolute inset-0 overflow-hidden border-r border-white/20"
             style={{ width: `${sliderPosition}%` }}
           >
-            <img 
-              src="https://picsum.photos/seed/before/1920/1080?blur=10" 
-              alt="Original Photo"
-              className="w-full h-full object-cover grayscale brightness-50"
-              style={{ width: `${100 / (sliderPosition / 100)}%` }}
-              referrerPolicy="no-referrer"
-            />
+            <div 
+              className="h-full relative"
+              style={{ width: containerRef.current?.offsetWidth || '100%' }}
+            >
+              <img 
+                src="https://picsum.photos/seed/portrait-hd/1920/1080" 
+                alt="Original Photo"
+                className="absolute inset-0 w-full h-full object-cover grayscale brightness-75 blur-[2px]"
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <div className="absolute bottom-6 left-6 px-4 py-2 rounded-full glass text-xs font-bold tracking-widest uppercase text-white/60">
               Before: Original
             </div>

@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from "react";
 const reviews = [
   {
     id: 1,
-    image: "https://picsum.photos/seed/rev1/400/500",
+    image: "https://picsum.photos/seed/id-photo/400/500",
     product: "취업 증명 테마",
     rating: 5,
     text: "집에서 대충 찍은 사진이었는데, 정말 스튜디오에서 찍은 것처럼 완벽하게 나왔어요. 덕분에 원하던 곳에 합격했습니다!",
@@ -13,7 +13,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: "https://picsum.photos/seed/rev2/400/500",
+    image: "https://picsum.photos/seed/fashion/400/500",
     product: "데일리 화보 테마",
     rating: 5,
     text: "인스타그램 업로드용으로 사용했는데 반응이 너무 좋아요. AI라고 믿기지 않을 정도로 자연스러운 보정이 일품입니다.",
@@ -21,7 +21,7 @@ const reviews = [
   },
   {
     id: 3,
-    image: "https://picsum.photos/seed/rev3/400/500",
+    image: "https://picsum.photos/seed/old-photo/400/500",
     product: "부모님 기념 테마",
     rating: 5,
     text: "부모님 옛날 사진을 리마스터링 해드렸는데 눈물을 흘리시며 좋아하셨어요. 소중한 추억을 되찾아주셔서 감사합니다.",
@@ -29,7 +29,7 @@ const reviews = [
   },
   {
     id: 4,
-    image: "https://picsum.photos/seed/rev4/400/500",
+    image: "https://picsum.photos/seed/portrait/400/500",
     product: "프로필 화보 테마",
     rating: 5,
     text: "작가님이 찍어주신 것보다 더 마음에 들어요. 조명과 분위기가 정말 예술입니다. 다음에도 꼭 이용할게요!",
@@ -37,7 +37,7 @@ const reviews = [
   },
   {
     id: 5,
-    image: "https://picsum.photos/seed/rev5/400/500",
+    image: "https://picsum.photos/seed/couple/400/500",
     product: "커플 기념 테마",
     rating: 5,
     text: "기념일을 맞아 신청했는데 너무 만족스러워요. 둘 다 인생샷 건졌습니다. 보정 강도 조절도 가능해서 좋았어요.",
@@ -45,7 +45,7 @@ const reviews = [
   },
   {
     id: 6,
-    image: "https://picsum.photos/seed/rev6/400/500",
+    image: "https://picsum.photos/seed/pet/400/500",
     product: "반려동물 테마",
     rating: 5,
     text: "우리 강아지 사진이 이렇게 멋지게 변할 줄 몰랐어요. 털 질감 하나하나 살아있어서 감동받았습니다.",
