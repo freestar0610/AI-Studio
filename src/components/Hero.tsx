@@ -16,7 +16,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gold text-xs font-semibold tracking-widest uppercase mb-8"
         >
           <Sparkles className="w-3 h-3" />
-          Next-Gen AI Photography
+          AI Photography
         </motion.div>
 
         <motion.h1
